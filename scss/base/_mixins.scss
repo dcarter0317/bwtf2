@@ -83,7 +83,7 @@
 // HELPER MIXINS
 
 @mixin tablet {
-   @media screen and (min-width: #{$med-device}) {
+   @media screen and (min-width: #{$med-device}), screen and (max-width: #{large-device}) {
        @content;
    }
 }
