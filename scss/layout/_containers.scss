@@ -1,0 +1,35 @@
+section {
+  margin: 30px 0;
+}
+.page-content {
+  max-width: calc(100% - 20px);
+  margin: 0 auto;
+}
+
+.text-copy-section,
+.media-block-section, {
+  margin-bottom: 30px;
+}
+
+aside {
+  .amzn-native-header-text {
+    display: none; // header from amazon ad plugin.
+  }
+}
+
+.sidebar-widget-container, main {
+  margin: 40px 0;
+}
+.sidebar-widget {
+    margin: 20px auto;
+}
+
+.sponsors {
+  .sidebar-widget {
+      height: 120px;
+   }
+}
+
+.social-media-widget {
+  margin: 20px auto;
+}

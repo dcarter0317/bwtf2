@@ -1,0 +1,93 @@
+// COLOR VARIABLES
+$btn-primary: #C01434;
+$btn-default: #1D305B;
+$border: #CDCFD1;
+$light-bg: #FAFAFA;
+$bg: #D8D8D8;
+$default-text: #2B2B2B;
+$light-text: #BDC3C7;
+$form-text: #4F4F4F;
+$form-error: #EC3131;
+$link-color: #3498DB;
+
+$red: #C01434;
+$yellow: #D6D930;
+$orange: #FF7F50;
+$blue: #3498DB;
+$purple: #1D305B;
+$grey: #4F4F4F;
+$light-grey: #D8D8D8;
+$white: #FEFEFE;
+$green: #38D238;
+
+$bg-red: $red;
+$bg-yellow: $yellow;
+$bg-orange: $orange;
+$bg-blue:  $blue;
+$bg-purple: $purple;
+$bg-grey: $grey;
+$bg-light-grey: $light-grey;
+$bg-green: $green;
+
+// FUNCTION COLOR VARIABLES
+$color-prim: ;
+$color-sec: ;
+
+$color-text-light: $light-text;
+$color-text-base: $default-text;
+$color-text-dark: ;
+
+$color-border-light: ;
+$color-border-dark : ;
+
+$color-link-default: $link-color;
+$color-link-visited: $color-link-default;
+
+$color-placeholder-text: #BDC3C7;
+
+
+// $color-shadow: rgba(#000, 0.8);
+$color-body: ;
+
+// FONT STACKS
+$stack-sans-serif: helvetica, arial, sans-serif ;
+$stack-helvetica:  'Helvetica Neue', $stack-sans-serif;
+
+$stack-greatlakesnf: 'greatlakesnfregular', $stack-sans-serif;
+$stack-roboto:  'Roboto', $stack-sans-serif;
+$stack-open-sans: 'Open Sans', $stack-sans-serif;
+
+
+// BORDER RADIUS
+$br: 5px;
+
+// FORMS
+$form-border-color-active: #4F4F4F;
+$form-border-color-inactive: #CDCFD1;
+$form-border-color-error: #EC3131;
+
+$form-text-color-active: #4F4F4F;
+$form-text-color-inactive: #CDCFD1;
+$form-text-color-error: #EC3131;
+
+
+// BUTTON
+$button-text-color: #FAFAFA;
+$button-background-color: transparent;
+$button-border-radius: $br;
+$button-padding: 10px 20px;
+
+$button-padding-tiny:  5px 10px;
+$button-padding-small: 15px 20px;
+$button-padding-large: 15px 30px;
+
+
+//BREAKPOINTS, LAYOUTS AND DISPLAYS
+$small-device: 380px;
+$med-device: 640px;
+$large-device: 1024px;
+
+
+// CONTAINER ELEMENTS
+$container-margin-top-bottom: 20px;
+$container-margin-left-right: auto;

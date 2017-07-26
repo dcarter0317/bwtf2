@@ -1,0 +1,37 @@
+header {
+  .site-logo {
+   display: block;
+   margin: 0 auto 20px auto;
+ }
+
+.hero-unit {
+   background-size: cover;
+   width: 100vw;
+ }
+
+ nav {
+   background: $bg-red;
+   font-weight: 700;
+   padding: 10px 0;
+   margin-bottom: 20px;
+
+   li {
+     border-bottom: 1px solid $white;
+     &:last-of-type {
+       border: 0;
+     }
+   }
+
+   a {
+     display: block;
+     color: $white;
+     text-align: center;
+     text-transform: uppercase;
+     line-height: 2;
+
+     &:visited {
+       color: $white;
+     }
+   }
+ }
+}

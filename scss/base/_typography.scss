@@ -1,0 +1,54 @@
+// WEBFONTS
+@font-face {
+    font-family: 'greatlakesnfregular';
+    src: url('/fonts/grealn__-webfont.woff2') format('woff2'),
+         url('/fonts/grealn__-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  font-family: $stack-open-sans;
+  color: $color-text-base;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $stack-greatlakesnf;
+  line-height: 1.5em;
+}
+
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 2.8em;
+}
+h3 {
+  font-size: 2.3em;
+}
+h4 {
+  font-size: 2em;
+}
+h5,h6 {
+  margin: 10px 0;
+  letter-spacing: 2.0px;
+}
+h5 {
+  font-size: 1.0em;
+}
+h6 {
+  font-size: .8em;
+}
+
+
+p {
+  margin: 10px 0;
+}
+
+a, a:visited {
+  color: $color-link-default;
+}
+
+::placeholder {
+  color: $color-placeholder-text;
+}

@@ -1,0 +1,40 @@
+//BUTTON
+.btn {
+  @include button;
+  margin: 10px 0;
+
+
+  &.btn-primary {
+    background: $btn-primary;
+
+    &:hover {
+      background: lighten($btn-primary, 10%);
+    }
+  }
+  &.btn-default {
+    background: $btn-default;
+
+    &:hover {
+      background: lighten($btn-default, 10%);
+    }
+  }
+
+  &.tiny-btn {
+    font-size: .7rem;
+    padding: $button-padding-tiny;
+  }
+  &.small-btn {
+    font-size: 1rem;
+    padding: $button-padding-small;
+  }
+  &.large-btn {
+    font-size: 1.3rem;
+    padding: $button-padding-large;
+  }
+  &.btn-inline {
+    display: inline-block;
+  }
+  &.btn-block {
+    display: block;
+  }
+}

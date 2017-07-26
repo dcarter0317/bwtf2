@@ -1,0 +1,175 @@
+// WEBFONTS
+
+@mixin font-face($family, $file) {
+  font-family: $family;
+  src: url('#{$path-font}/#{$file}-webfont.eot');
+  src: url('#{$path-font}/#{$file}-webfont.eot?iefix') format('embedded-opentype');
+  src: url('#{$path-font}/#{$file}-webfont.woff') format('woff');
+  src: url('#{$path-font}/#{$file}-webfont.ttf') format('truetype');
+}
+
+// TEXT
+
+@mixin text($size, $l-height: null, $weight: null, $color: null) {
+   font-size: $size;
+   line-height: $l-height;
+   font-weight: $weight;
+   color: $color;
+}
+
+// IMAGES
+
+@mixin backImage($image) {
+	background: url($image) no-repeat 50% 20%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	background-size: cover;
+
+	-webkit-transition: all 0.3 ease-out;
+	-moz-transition: all 0.3 ease-out;
+	-o-transition: all 0.3 ease-out;
+	transition: all 0.3 ease-out;
+
+	@media (min-width: 801px) {
+       height: 350px;
+	}
+	@media (min-width: 800px) {
+       height: 150px;
+	}
+
+	@media (min-width: 300px) {
+       height: 100px;
+	}
+}
+
+@mixin imageSprite($width, $height, $sprite-class,$sprite-image, $x, $y) {
+   @extend .#{$sprite-class};
+   background-image: url(img/#{$sprite-image});
+   background-position: $x $y;
+   background-repeat: no-repeat;
+   background: url('img/#{$sprite-image}.png');
+   width: $width;
+   height: $height;
+}
+
+@mixin center-content($top, $left, $y-pos, $z-pos) { // vertically and horizionally centers absolutely positioned elements
+  position: absolute;
+  top:  $top;
+  left: $left;
+  transform:translate($y-pos, $z-pos);
+}
+
+@mixin clearfix() {
+  &:after {
+  	 content: '';
+  	 display: table;
+  	 clear: both;
+  }
+}
+
+@mixin box-sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+@mixin gradient-overlay($image){
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                              url('../img/#{$image}') 0 0 no-repeat;
+  background-size: cover;
+}
+
+// HELPER MIXINS
+
+@mixin tablet {
+   @media screen and (min-width: #{$med-device}) {
+       @content;
+   }
+}
+
+@mixin desktop {
+  @media screen and (min-width: #{large-device}) {
+      @content;
+  }
+}
+
+@mixin retina {
+  @media
+     only screen and (-webkit-min-device-pixel-ratio: 2),
+     only screen and (min--moz-device-pixel-ratio: 2),
+     only screen and (-o-min-device-pixel-ratio: 2/1),
+     only screen and (min-device-pixel-ratio: 2),
+     only screen and (min-resolution: 192dpi),
+     only screen and (min-resolution: 2dppx) {
+        @content;
+     }
+}
+@mixin iesupport {
+  @media all and (-ms-high-contrast: none) and (-ms-high-contrast: active) {
+     @content;
+  }
+}
+
+@mixin button {
+  background: $button-background-color;
+  display: block;
+  color: $button-text-color;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: $button-padding;
+  border-radius: $button-border-radius;
+}
+
+@mixin content-container($width){
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+@mixin background-colors {
+  &.red {
+    background: $red;
+  }
+  &.purple {
+    background: $purple;
+  }
+  &.orange {
+    background: $orange;
+  }
+  &.blue {
+    background: $blue;
+  }
+  &.yellow {
+    background: $yellow;
+  }
+  &.grey {
+    background: $grey;
+  }
+  &.green {
+    background: $green;
+  }
+}
+@mixin text-colors {
+  &.red {
+    color: $red;
+  }
+  &.purple {
+    color: $purple;
+  }
+  &.orange {
+    color: $orange;
+  }
+  &.blue {
+    color: $blue;
+  }
+  &.yellow {
+    color: $yellow;
+  }
+  &.grey {
+    color: $grey;
+  }
+  &.green {
+    color: $green;
+  }
+}
